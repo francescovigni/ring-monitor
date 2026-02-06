@@ -1,15 +1,17 @@
 # Ring Alarm to Google Sheets Monitor
 
-Monitor Ring Alarm events in real-time and automatically log them to Google Sheets.
+A TypeScript application that monitors your Ring Alarm system in real-time and automatically logs all events to Google Sheets. Built with [ring-client-api](https://github.com/dgreif/ring) for Ring integration and the official Google Sheets API.
+
+Perfect for keeping a historical record of your home security events—know when doors/windows were opened, when the alarm was armed/disarmed, motion detected, and more.
 
 ## Features
 
-- 🔔 Real-time monitoring of Ring Alarm events
+- 🔔 Real-time monitoring of Ring Alarm events via WebSocket
 - 📊 Automatic logging to Google Sheets
-- 🔄 Automatic refresh token management
+- 🔄 Automatic refresh token management (tokens persist across restarts)
 - 📦 Batched writes to avoid API rate limits
 - 🐳 Docker support for easy deployment
-- 🎯 Monitors: contact sensors, motion sensors, alarm state changes, doorbell presses, and more
+- 🎯 Monitors: contact sensors, motion sensors, alarm state changes, keypads, locks, and more
 
 ## Prerequisites
 
