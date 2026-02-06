@@ -1,0 +1,15 @@
+services:
+  ring-monitor:
+    build: .
+    container_name: ring-alarm-monitor
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Mount .env file so token updates persist
+      - ./.env:/app/.env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

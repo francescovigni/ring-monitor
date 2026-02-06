@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Source files (we copy dist/)
+src/*.ts
+tsconfig.json
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Git
+.git/
+.gitignore
+
+# Docs
+README.md
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
